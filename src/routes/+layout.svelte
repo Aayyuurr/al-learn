@@ -30,12 +30,6 @@
 </div>
 
 <style lang="scss">
-    .wrapper {
-        
-        border: 1px solid black;;
-        
-
-    }
     header {
         height: 68px;
         
