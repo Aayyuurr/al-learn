@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { slide } from 'svelte/transition';
 	let open = false;
 	const toggle = () => {
 		open = !open;
@@ -35,7 +36,7 @@
 		<h1>Algerien Learn</h1>
 	</a>
 	{#if open}
-		<nav>
+		<nav transition:slide="{{duration: 300, axis: 'x'}}">
 			<ul>
 				<li><a href="/cours">cours</a></li>
 				<li><a href="/path">parcours</a></li>
