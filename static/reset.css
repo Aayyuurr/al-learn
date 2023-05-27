@@ -1,0 +1,130 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+ 
+}
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+a:hover{
+  color: var(--primary-color);
+}
+
+/* font used in latin  */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500&family=Merriweather:wght@400;700&display=swap');
+/* title font */
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--serif)
+}
+/* text font */
+p,span,a,li{
+  font-family: var(--sans-serif)
+}
+
+/* declar css variables */
+:root{
+  --text-color: #06312f;
+  --bg-color: #f2f2f2;
+  --primary-color: #d58bfa;
+  --secondary-color: #b3e681;
+  --accent-color: #0e8044;
+  --shadow-color: rgba(30, 30, 30, 0.1);
+
+  --base-size: 1rem;
+  --scale: 1.04;
+  --h5: calc(var(--scale) * var(--base-size));
+  --h4: calc(var(--scale) * var(--h5));
+  --h3: calc(var(--scale) * var(--h4));
+  --h2: calc(var(--scale) * var(--h3));
+  --h1: calc(var(--scale) * var(--h2));
+  --small: calc(var(--base-size) / var(--scale) );
+  --serif: 'Merriweather', serif;
+  --sans-serif: 'Karla', sans-serif;
+}
+
+h5, h5 {
+  font-size: var(--h5);
+}
+h4 , h4{
+  font-size: var(--h4);
+}
+h3 , h3{
+  font-size: var(--h4);
+}
+h2, .h2 {
+  font-size: var(--h2);
+}
+h1,.h1 {
+  font-size: var(--h1);
+}
+small, .text-small {
+  font-size: var(--small);
+}
+
+@media (min-width : 768px){
+  :root{
+    /* ---scale: 1.25; */
+  }
+}
