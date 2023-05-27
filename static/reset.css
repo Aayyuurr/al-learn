@@ -75,13 +75,7 @@ a:hover{
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500&family=Merriweather:wght@400;700&display=swap');
 /* title font */
-h1,h2,h3,h4,h5,h6{
-  font-family: var(--serif)
-}
-/* text font */
-p,span,a,li{
-  font-family: var(--sans-serif)
-}
+
 
 /* declar css variables */
 :root{
@@ -91,7 +85,7 @@ p,span,a,li{
   --secondary-color: #b3e681;
   --accent-color: #0e8044;
   --shadow-color: rgba(30, 30, 30, 0.1);
-
+  --black-color: #000;
   --base-size: 1rem;
   --scale: 1.04;
   --h5: calc(var(--scale) * var(--base-size));
@@ -103,7 +97,13 @@ p,span,a,li{
   --serif: 'Merriweather', serif;
   --sans-serif: 'Karla', sans-serif;
 }
-
+h1,h2,h3,h4,h5,h6,a{
+  font-family: var(--serif)
+}
+/* text font */
+p,span,li{
+  font-family: var(--sans-serif)
+}
 h5, h5 {
   font-size: var(--h5);
 }
