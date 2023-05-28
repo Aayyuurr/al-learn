@@ -84,7 +84,8 @@ a:hover{
   --primary-color: #d58bfa;
   --secondary-color: #b3e681;
   --accent-color: #0e8044;
-  --shadow-color: rgba(30, 30, 30, 0.1);
+  --shadow-color: #e8e9e9;
+  --shadow-color-accent: #e6e1e9;
   --black-color: #000;
   --base-size: 1rem;
   --scale: 1.04;
