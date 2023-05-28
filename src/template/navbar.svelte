@@ -162,6 +162,8 @@
 			width: 94%;
 			background: var(--bg-color);
 			height: calc(100vh - 68px);
+			height: -webkit-fill-available;
+
 
 			padding-top: 5rem;
 

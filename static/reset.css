@@ -11,17 +11,7 @@
   margin: 0;
   padding: 0;
 }
-/* mobil vh support */
-html {
-  height: -webkit-fill-available;
-}
-/* Avoid Chrome to see Safari hack */
-  @supports (-webkit-touch-callout: none) {
-    body {
-      /* The hack for Safari */
-      min-height: -webkit-fill-available;
-    }
-  }
+
 /*
   3. Allow percentage-based heights in the application
 */
@@ -37,7 +27,6 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  min-height: 100vh;
   color: var(--text-color);
   background-color: var(--bg-color);
   
